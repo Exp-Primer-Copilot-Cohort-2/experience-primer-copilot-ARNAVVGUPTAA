@@ -1,12 +1,4 @@
 function skillsMember() {
-    return {
-        restrict: 'E',
-        templateUrl: 'modules/skills/views/member.html',
-        controller: 'SkillsMemberController',
-        controllerAs: 'vm',
-        bindToController: true,
-        scope: {
-            member: '='
-        }
-    };
+    var member = document.getElementById("member");
+    member.innerHTML = "Skills: <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>";
 }
